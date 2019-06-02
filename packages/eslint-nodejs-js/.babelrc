@@ -1,0 +1,15 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "node": "6.4"
+      },
+      "debug": false,
+      "include": ["transform-es2015-shorthand-properties"],
+      "useBuiltIns": true
+    }],
+  ],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "decoratorsBeforeExport": true }]
+  ]
+}

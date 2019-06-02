@@ -1,0 +1,39 @@
+{
+  "name": "eslint-nodejs-ts",
+  "version": "1.0.0",
+  "description": "eslint config template for nodejs with Typescript(based on airbnb)",
+  "scripts": {
+    "lint": "eslint server --ext .ts --cache --fix",
+    "format": "prettier-eslint 'server/**/*.{ts,json}' --write"
+  },
+  "lint-staged": {
+    "**/*.ts": [
+      "eslint --fix",
+      "prettier-eslint --write",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "@types/node": "^12.0.4",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-import-resolver-typescript": "^1.1.1",
+    "eslint-plugin-import": "^2.17.3",
+    "husky": "^2.3.0",
+    "lint-staged": "^8.1.7",
+    "prettier-eslint-cli": "^4.7.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "typescript": "^3.5.1"
+  },
+  "license": "MIT"
+}
