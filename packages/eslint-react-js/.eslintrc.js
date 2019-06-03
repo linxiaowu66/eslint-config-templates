@@ -18,7 +18,7 @@ module.exports =  {
       webpack: {
         config: './webpack/webpack-common-config.js'
       }
-    }
+    },
   },
   env: {
     browser: true // enable all browser global variables

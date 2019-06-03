@@ -6,9 +6,12 @@ class App extends React.Component {
   componentWillReceiveProps() {}
 
   render() {
-    return (<div><Test /></div>)
+    return (
+      <div>
+        <Test />
+      </div>
+    )
   }
 }
-
 
 render(App(), document.getElementById('app'))

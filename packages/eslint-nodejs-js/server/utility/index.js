@@ -20,17 +20,20 @@ module.exports = {
       's+': date.getSeconds(),
     };
     if (/(Y+)/.test(format)) {
-      str = str.replace(RegExp.$1,
-        (date.getFullYear().toString()).substr(4 - RegExp.$1.length));
+      str = str.replace(
+        RegExp.$1,
+        date
+          .getFullYear()
+          .toString()
+          .substr(4 - RegExp.$1.length),
+      );
     }
 
     Object.keys(o).map((k) => {
       if (new RegExp(`(${k})`).test(format)) {
         str = str.replace(
           RegExp.$1,
-          RegExp.$1.length === 1
-            ? o[k].toString()
-            : `00${o[k]}`.substr(o[k].toString().length),
+          RegExp.$1.length === 1 ? o[k].toString() : `00${o[k]}`.substr(o[k].toString().length),
         );
       }
       return null;
