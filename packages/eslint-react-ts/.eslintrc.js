@@ -8,6 +8,7 @@ module.exports =  {
     'airbnb',  // Uses airbnb, it including the react rule(eslint-plugin-react/eslint-plugin-jsx-a11y)
     // 'plugin:@typescript-eslint/recommended', // Optional enable, will more stricter
     'plugin:import/typescript', // Use prettier/react to pretty react syntax
+    'plugin:promise/recommended',
     // 'plugin:prettier/recommended',
     // 'prettier/@typescript-eslint'
   ],
@@ -25,7 +26,7 @@ module.exports =  {
   env: {
     browser: true // enable all browser global variables
   },
-  plugins: ['@typescript-eslint', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'react-hooks', 'promise'],
   rules:  {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. '@typescript-eslint/explicit-function-return-type': 'off',

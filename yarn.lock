@@ -3148,7 +3148,7 @@ eslint-plugin-jsx-a11y@^6.2.1:
 
 eslint-plugin-promise@^4.1.1:
   version "4.1.1"
-  resolved "http://r.cnpmjs.org/eslint-plugin-promise/download/eslint-plugin-promise-4.1.1.tgz#1e08cb68b5b2cd8839f8d5864c796f56d82746db"
+  resolved "https://registry.npm.taobao.org/eslint-plugin-promise/download/eslint-plugin-promise-4.1.1.tgz#1e08cb68b5b2cd8839f8d5864c796f56d82746db"
   integrity sha1-HgjLaLWyzYg5+NWGTHlvVtgnRts=
 
 eslint-plugin-react-hooks@^1.6.0:
