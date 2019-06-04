@@ -23,20 +23,20 @@ module.exports =  {
   env: {
     browser: true // enable all browser global variables
   },
-  'plugins': ['react-hooks'], // ['prettier', 'react-hooks']
+  plugins: ['react-hooks'], // ['prettier', 'react-hooks']
   rules:  {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. '@typescript-eslint/explicit-function-return-type': 'off',
-    "react-hooks/rules-of-hooks": "error",
-    "semi": ["error", "never"],
-    "react/jsx-one-expression-per-line": 0,
+    'react-hooks/rules-of-hooks': 'error',
+    semi: ['error', 'never'],
+    'react/jsx-one-expression-per-line': 0,
     /**
      * @description rules of eslint-plugin-prettier
      */
-    // 'prettier/prettier': [
-    //   'error', {
-    //     'singleQuote': true,
-    //     'semi': false
+    // prettier/prettier: [
+    //   error, {
+    //     singleQuote: true,
+    //     semi: false
     //   }
     // ]
   },

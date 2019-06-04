@@ -12,34 +12,42 @@ module.exports =  {
     // 'prettier/@typescript-eslint'
   ],
   settings: {
-    "import/parsers": {
-      "@typescript-eslint/parser": [".ts", ".tsx"]
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx']
     },
-    "import/resolver": {
+    'import/resolver': {
       // use <root>/path/to/folder/tsconfig.json
-      "typescript": {
-        "directory": "./tsconfig.json"
+      typescript: {
+        directory: './tsconfig.json'
       }
     }
   },
   env: {
     browser: true // enable all browser global variables
   },
-  'plugins': ['@typescript-eslint', 'react-hooks'],
+  plugins: ['@typescript-eslint', 'react-hooks'],
   rules:  {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. '@typescript-eslint/explicit-function-return-type': 'off',
     'no-useless-constructor': 0,
-    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
-    "react/jsx-one-expression-per-line": 0,
-    "react-hooks/rules-of-hooks": "error",
+    'react/jsx-filename-extension': [1, { 'extensions': ['.ts', '.tsx'] }],
+    'react/jsx-one-expression-per-line': 0,
+    'react-hooks/rules-of-hooks': 'error',
+
+    /**
+     * @description rules of @typescript-eslint
+     */
+    '@typescript-eslint/prefer-interface': 'off', // also want to use 'type'
+    '@typescript-eslint/explicit-function-return-type': 'off', // annoying to force return type
+    '@typescript-eslint/indent': 'off' // avoid conflict with airbn
+
     /**
      * @description rules of eslint-plugin-prettier
      */
     // 'prettier/prettier': [
-    //   'error', {
-    //     'singleQuote': true,
-    //     'semi': false
+    //   error, {
+    //     singleQuote: true,
+    //     semi: false
     //   }
     // ]
   },

@@ -11,12 +11,12 @@ module.exports = {
     }
   },
   extends: [
-    "airbnb-base",
-    "plugin:promise/recommended"
+    'airbnb-base',
+    'plugin:promise/recommended'
   ],
-  "plugins": ["promise"],
+  'plugins': ['promise'],
   rules: {
-    "no-console": "error",
-    "prefer-arrow-callback": "error"
+    'no-console': 'error',
+    'prefer-arrow-callback': 'error'
   }
 }
