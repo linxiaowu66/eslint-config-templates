@@ -34,10 +34,11 @@ module.exports =  {
     /**
      * @description rules of eslint-plugin-prettier
      */
-    // prettier/prettier: [
-    //   error, {
+    // 'prettier/prettier': [
+    //   'error', {
     //     singleQuote: true,
-    //     semi: false
+    //     semi: false,
+    //     trailingComma: true // be same with airbnb comma-dangle rule
     //   }
     // ]
   },

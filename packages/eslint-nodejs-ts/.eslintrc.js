@@ -31,6 +31,7 @@ module.exports =  {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. '@typescript-eslint/explicit-function-return-type': 'off',
     'no-useless-constructor': 0,
+    'semi': ['error', 'never'],
     /**
      * @description rules of eslint official
      */
@@ -59,8 +60,8 @@ module.exports =  {
     /**
      * @description rules of eslint-plugin-prettier
      */
-    // prettier/prettier: [
-    //   error, {
+    // 'prettier/prettier': [
+    //   'error', {
     //     singleQuote: true,
     //     semi: false,
     //     trailingComma: true // be same with airbnb comma-dangle rule

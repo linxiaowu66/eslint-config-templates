@@ -12,11 +12,19 @@ module.exports = {
   },
   extends: [
     'airbnb-base',
+    // 'prettier',
     'plugin:promise/recommended'
   ],
-  'plugins': ['promise'],
+  'plugins': ['promise'/*, 'prettier'*/],
   rules: {
     'no-console': 'error',
-    'prefer-arrow-callback': 'error'
+    'prefer-arrow-callback': 'error',
+    'semi': ['error', 'never'],
+    // 'prettier/prettier': [
+    //   'error', {
+    //   singleQuote: true,
+    //   semi: false,
+    //   trailingComma: true // be same with airbnb comma-dangle rule
+    // }]
   }
 }
