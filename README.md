@@ -18,4 +18,4 @@ All config is based on [airbnb](https://github.com/airbnb/javascript). And it wi
 
 ## contribution
 
-As I have poor experience in other frameworks, so welcome to contribute this repo if you the eslint templates.
+As I have poor experience in other frameworks, so welcome to contribute this repo if you have the eslint templates.
